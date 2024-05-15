@@ -24,10 +24,13 @@ const Navbar = () => {
                 Home
               </a>
             </li>
-            <li>
-              <a className="nav-item" onClick={handleOpen}>
-                Buy now
-              </a>
+            <li
+              onClick={handleOpen}
+              style={{
+                cursor: "pointer"
+              }}
+            >
+              <span className="nav-item">Buy now</span>
             </li>
             <li>
               <a href="/services" className="nav-item">
@@ -48,10 +51,15 @@ const Navbar = () => {
               <li>
                 <a href="/">Home</a>
               </li>
-              <li>
-                <a href="#" onClick={handleOpen}>
+              <li onClick={handleOpen}>
+                <div
+                  style={{
+                    color: "white"
+                  }}
+                  href="#"
+                >
                   Buy now
-                </a>
+                </div>
               </li>
               <li>
                 <a href="/services">Pre Sale</a>
