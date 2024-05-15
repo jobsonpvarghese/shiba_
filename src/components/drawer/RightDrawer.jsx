@@ -8,7 +8,7 @@ const RightDrawer = ({ children, open, onClose, onOpen, className }) => {
     }
     onClose(open)
   }
-
+  //MMM
   const drawerWidth = 240
   return (
     <div>
