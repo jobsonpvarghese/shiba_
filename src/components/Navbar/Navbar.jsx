@@ -49,7 +49,9 @@ const Navbar = () => {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a onClick={handleOpen}>Buy now</a>
+                <a href="#" onClick={handleOpen}>
+                  Buy now
+                </a>
               </li>
               <li>
                 <a href="/services">Pre Sale</a>

@@ -15,7 +15,7 @@ const ModalBox = ({ open, handleClose }) => {
     boxShadow: 24,
     p: 4
   }
-  const [text, setText] = useState("")
+  const [text] = useState("vwv2ef2nibiwueb")
 
   const handleCopy = () => {
     navigator.clipboard
