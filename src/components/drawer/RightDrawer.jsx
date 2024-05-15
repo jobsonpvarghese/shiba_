@@ -1,6 +1,5 @@
 import React from "react"
 import { Drawer } from "@mui/material"
-// import "./RightDrawer.css"
 
 const RightDrawer = ({ children, open, onClose, onOpen, className }) => {
   const toggleDrawer = open => event => {
