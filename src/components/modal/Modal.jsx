@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import qr from "../../images/qr.png"
 import "./Modal.css"
-import { TextField, Box, Button, Typography, Modal } from "@mui/material"
+import { Box, Button, Typography, Modal } from "@mui/material"
 import ContentCopyIcon from "@mui/icons-material/ContentCopy"
 
 const ModalBox = ({ open, handleClose }) => {
