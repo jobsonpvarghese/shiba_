@@ -28,8 +28,8 @@ p {
 }
 
 .nav-item:hover {
-  background-color: #555;
   color: #ff0;
+  font-weight: 700;
 }
 
 .nav-toggle {

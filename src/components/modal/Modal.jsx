@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import qr from "../../images/qr.png"
 import "./Modal.css"
 import { Box, Button, Typography, Modal } from "@mui/material"
@@ -15,17 +15,17 @@ const ModalBox = ({ open, handleClose }) => {
     boxShadow: 24,
     p: 4
   }
-  const [text] = useState("vwv2ef2nibiwueb")
+  //const [text] = useState("vwv2ef2nibiwueb")
 
   const handleCopy = () => {
-    navigator.clipboard
-      .writeText(text)
-      .then(() => {
-        alert("Text copied to clipboard!")
-      })
-      .catch(err => {
-        console.error("Failed to copy text: ", err)
-      })
+    // navigator.clipboard
+    //   .writeText(text)
+    //   .then(() => {
+    //     alert("Text copied to clipboard!")
+    //   })
+    //   .catch(err => {
+    //     console.error("Failed to copy text: ", err)
+    //   })
   }
   return (
     <div>
