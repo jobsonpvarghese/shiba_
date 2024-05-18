@@ -3,6 +3,8 @@ import Navbar from "../components/Navbar/Navbar"
 import { Box, Container, Grid } from "@mui/material"
 import shiba from "../images/shiba.png"
 import Roadmap from "../components/Roadmap/Roadmap"
+import Footer from "../components/footer/Footer"
+import SocialMedia from "../components/social/SocialMedia"
 function Home() {
   return (
     <div>
@@ -34,7 +36,13 @@ function Home() {
         </div>
       </div>
       <div>
+        <SocialMedia />
+      </div>
+      <div>
         <Roadmap />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   )
