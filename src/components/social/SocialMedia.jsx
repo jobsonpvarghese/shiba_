@@ -8,7 +8,7 @@ const SocialMedia = () => {
   return (
     <div className="container">
       <Box sx={{ p: 4 }}>
-        <Grid container spacing={2} justifyContent="center">
+        <Grid container spacing={5} justifyContent="center" alignItems="center">
           <Grid item>
             <Link href="https://telegram.org" target="_blank" rel="noopener" aria-label="Telegram">
               <FontAwesomeIcon icon={faTelegram} size="2x" />
