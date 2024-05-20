@@ -11,7 +11,8 @@ const LeaderBoard = () => {
         <h1
           style={{
             textAlign: "center",
-            fontSize: "50px"
+            fontSize: "50px",
+            marginTop: "150px"
           }}
         >
           Leaderboard

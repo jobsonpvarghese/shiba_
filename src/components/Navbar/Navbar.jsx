@@ -81,11 +81,6 @@ const Navbar = () => {
                 Leaderboard
               </a>
             </li>
-            <li>
-              <a href="/contact" className="nav-item">
-                Contact
-              </a>
-            </li>
           </ul>
         </nav>
         <div className="nav_responsive">
@@ -108,14 +103,11 @@ const Navbar = () => {
               <li>
                 <a href="/leaderboard">Leaderboard</a>
               </li>
-              <li>
-                <a href="/contact">Contact</a>
-              </li>
             </ul>
           </RightDrawer>
         </div>
       </div>
-      <ModalBox open={openModal} handleClose={handleClose} />
+      <ModalBox open={openModal} handleClose={handleClose} isOpen={isOpen} onClose={setIsOpen} />
     </div>
   )
 }

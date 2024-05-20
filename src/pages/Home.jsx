@@ -26,7 +26,7 @@ function Home() {
                     Shiba <span>for</span> <span>President</span>
                   </h1>
                   <div className="btn-title">
-                    <div className="buy">Buy Shiba</div>
+                    <div className="buy">About Us</div>
                     <div className="join_tg">Join Telegram</div>
                   </div>
                 </Grid>

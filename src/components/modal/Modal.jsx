@@ -1,10 +1,11 @@
 import React from "react"
 import qr from "../../images/qr.png"
 import "./Modal.css"
-import { Box, Button, Typography, Modal } from "@mui/material"
+import { Box, Button, Typography, Modal, IconButton } from "@mui/material"
 import ContentCopyIcon from "@mui/icons-material/ContentCopy"
+import CloseIcon from "@mui/icons-material/Close"
 
-const ModalBox = ({ open, handleClose }) => {
+const ModalBox = ({ open, handleClose, isOpen, onClose }) => {
   const style = {
     position: "absolute",
     top: "50%",
@@ -15,7 +16,6 @@ const ModalBox = ({ open, handleClose }) => {
     boxShadow: 24,
     p: 4
   }
-  //const [text] = useState("vwv2ef2nibiwueb")
 
   const handleCopy = () => {
     // navigator.clipboard
@@ -30,7 +30,16 @@ const ModalBox = ({ open, handleClose }) => {
   return (
     <div>
       <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+        {/* Close button */}
         <Box sx={style}>
+          <IconButton onClick={handleClose}>
+            <CloseIcon
+              sx={{
+                color: "white",
+                cursor: "pointer"
+              }}
+            />
+          </IconButton>
           <div
             style={{
               display: "flex",
@@ -41,7 +50,7 @@ const ModalBox = ({ open, handleClose }) => {
           >
             <Typography
               id="modal-modal-title"
-              variant="h6"
+              variant="h3"
               component="h2"
               color="white"
               sx={{
@@ -66,7 +75,6 @@ const ModalBox = ({ open, handleClose }) => {
             <Typography id="modal-modal-description" sx={{ mt: 2, mb: 2 }}>
               Scan the QR code to send SOL to get your Shiba.
             </Typography>
-
             <img src={qr} alt="" className="qr" />
           </div>
         </Box>

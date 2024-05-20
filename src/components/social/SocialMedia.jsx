@@ -7,7 +7,7 @@ import "./Social.css"
 const SocialMedia = () => {
   return (
     <div className="container">
-      <Box sx={{ p: 4 }}>
+      <Box display="flex" justifyContent="center" alignItems="center" sx={{ p: 4 }}>
         <Grid container spacing={5} justifyContent="center" alignItems="center">
           <Grid item>
             <Link href="https://telegram.org" target="_blank" rel="noopener" aria-label="Telegram">
