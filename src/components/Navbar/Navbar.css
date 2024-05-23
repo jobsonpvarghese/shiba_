@@ -5,6 +5,7 @@
   background-color: #333;
   z-index: 1000;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   /* padding: 10px 20px; */
@@ -13,16 +14,24 @@
 }
 .navbar-container-sticky {
   position: fixed;
-  top: 0;
+  top: 20;
   width: 100%;
   background-color: #333;
   z-index: 1000;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   /* padding: 10px 20px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #0e46a3 !important;
+}
+.nav_desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .logo {
   width: auto;
@@ -69,6 +78,7 @@ p {
 }
 .join_header {
   background-color: #f7b500;
+  width: 100%;
 }
 
 .join_header p {

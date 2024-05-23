@@ -16,7 +16,7 @@
 }
 
 .shiba_landing {
-  padding-top: 50px;
+  padding-top: 70px;
   width: 100%;
   height: auto;
 }
@@ -24,6 +24,8 @@
   color: white;
   font-size: 7rem;
   line-height: 90%;
+  text-align: center;
+  padding-top: 10%;
 }
 .title span {
   color: #f7b500;
@@ -58,6 +60,7 @@
   }
   .title {
     font-size: 5rem;
+    padding-top: 0%;
   }
   .btn-title {
     padding-bottom: 50px;

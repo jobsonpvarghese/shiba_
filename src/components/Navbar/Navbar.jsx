@@ -32,79 +32,80 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="join_header">
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            backgroundColor: "#f7b500"
-          }}
-        >
-          <Link
-            href="https://telegram.org"
-            target="_blank"
-            rel="noopener"
-            aria-label="Telegram"
-            style={{
-              color: "black"
+      <div className={`navbar-container${isSticky ? "-sticky" : ""}`}>
+        <div className={`join_header`}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              backgroundColor: "#f7b500"
             }}
           >
-            <FontAwesomeIcon icon={faTelegram} size="2x" />
-          </Link>
-          &nbsp;
-          <p className="text-shadow">Join our Telegram.</p>
-        </Box>
-      </div>
-      <div className={`navbar-container${isSticky ? "-sticky" : ""}`}>
-        <div>
-          <img src={logo} className="logo" alt="" />
-        </div>
-
-        <nav className="navbar">
-          <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-            <li>
-              <a href="/" className="nav-item">
-                Home
-              </a>
-            </li>
-            <li
-              onClick={handleOpen}
+            <Link
+              href="https://telegram.org"
+              target="_blank"
+              rel="noopener"
+              aria-label="Telegram"
               style={{
-                cursor: "pointer"
+                color: "black"
               }}
             >
-              <span className="nav-item">Buy now</span>
-            </li>
-            <li>
-              <a href="/leaderboard" className="nav-item">
-                Leaderboard
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div className="nav_responsive">
-          <MenuIcon className="menu_icon" fontSize="large" onClick={() => setIsOpen(!isOpen)} />
-          <RightDrawer open={isOpen} onClose={setIsOpen}>
-            <ul className="nav_responsive_ul">
+              <FontAwesomeIcon icon={faTelegram} size="2x" />
+            </Link>
+            &nbsp;
+            <p className="text-shadow">Join our Telegram.</p>
+          </Box>
+        </div>
+        <div className="nav_desktop">
+          <div>
+            <img src={logo} className="logo" alt="" />
+          </div>
+          <nav className="navbar">
+            <ul className={`nav-links ${isOpen ? "open" : ""}`}>
               <li>
-                <a href="/">Home</a>
+                <a href="/" className="nav-item">
+                  Home
+                </a>
               </li>
-              <li onClick={handleOpen}>
-                <div
-                  style={{
-                    color: "white"
-                  }}
-                  href="#"
-                >
-                  Buy now
-                </div>
+              <li
+                onClick={handleOpen}
+                style={{
+                  cursor: "pointer"
+                }}
+              >
+                <span className="nav-item">Buy now</span>
               </li>
               <li>
-                <a href="/leaderboard">Leaderboard</a>
+                <a href="/leaderboard" className="nav-item">
+                  Leaderboard
+                </a>
               </li>
             </ul>
-          </RightDrawer>
+          </nav>
+          <div className="nav_responsive">
+            <MenuIcon className="menu_icon" fontSize="large" onClick={() => setIsOpen(!isOpen)} />
+            <RightDrawer open={isOpen} onClose={setIsOpen}>
+              <ul className="nav_responsive_ul">
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li onClick={handleOpen}>
+                  <div
+                    style={{
+                      color: "white"
+                    }}
+                    href="#"
+                  >
+                    Buy now
+                  </div>
+                </li>
+                <li>
+                  <a href="/leaderboard">Leaderboard</a>
+                </li>
+              </ul>
+            </RightDrawer>
+          </div>
         </div>
       </div>
       <ModalBox open={openModal} handleClose={handleClose} isOpen={isOpen} onClose={setIsOpen} />
