@@ -7,7 +7,11 @@ const Footer = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6} md={4}>
           <Typography variant="h6">About Us</Typography>
-          <Typography variant="body2">We are a company dedicated to providing the best service possible.</Typography>
+          <Typography variant="body2">
+            Vote4Shiba is not your ordinary memecoin. It combines the whimsical charm and viral potential of a memecoin with groundbreaking features
+            that foster community engagement and governance. At the heart of Vote4Shiba lies a strong sense of community attachment and a commitment
+            to advocating for free speech.
+          </Typography>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Typography variant="h6">Contact</Typography>

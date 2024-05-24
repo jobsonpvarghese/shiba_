@@ -5,6 +5,8 @@ import shiba from "../images/shiba.jpeg"
 import Roadmap from "../components/Roadmap/Roadmap"
 import Footer from "../components/footer/Footer"
 import SocialMedia from "../components/social/SocialMedia"
+// import Timeline from "../components/timeline/Timeline"
+import TimelineWithFeature from "../components/timeline/TimelineWithFeature"
 function Home() {
   return (
     <div>
@@ -40,6 +42,9 @@ function Home() {
       </div>
       <div>
         <Roadmap />
+      </div>
+      <div>
+        <TimelineWithFeature />
       </div>
       <div>
         <Footer />
