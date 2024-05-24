@@ -77,6 +77,11 @@ const Navbar = () => {
                 <span className="nav-item">Buy now</span>
               </li>
               <li>
+                <a href="/whitepaper" className="nav-item">
+                  White Paper
+                </a>
+              </li>
+              <li>
                 <a href="/leaderboard" className="nav-item">
                   Leaderboard
                 </a>
@@ -99,6 +104,9 @@ const Navbar = () => {
                   >
                     Buy now
                   </div>
+                </li>
+                <li>
+                  <a href="/whitepaper">White Paper</a>
                 </li>
                 <li>
                   <a href="/leaderboard">Leaderboard</a>
