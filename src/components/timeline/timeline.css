@@ -240,7 +240,8 @@ UIA-TIMELINE
 }
 
 [data-uia-timeline-skin="4"] .uia-timeline__point {
-  background-color: var(--uia-timeline-point-background-color, #fff);
+  background-color: var(--uia-timeline-point-background-color, #0e46a3);
+  color: #fff;
 }
 
 [data-uia-timeline-skin="4"] .uia-timeline__point::before {
@@ -423,6 +424,7 @@ UIA-TIMELINE
 .uia-card__container {
   display: var(--uia-card-display, grid);
   gap: var(--uia-card-content-gap);
+  /* width */
 }
 
 .uia-card__time-divider::before {

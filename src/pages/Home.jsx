@@ -7,6 +7,7 @@ import Footer from "../components/footer/Footer"
 import SocialMedia from "../components/social/SocialMedia"
 // import Timeline from "../components/timeline/Timeline"
 import TimelineWithFeature from "../components/timeline/TimelineWithFeature"
+import Timeline from "../components/timeline/Timeline"
 function Home() {
   return (
     <div>
@@ -23,15 +24,7 @@ function Home() {
                 <Grid item xs={12} sm={12} md={6}>
                   <img className="shiba_landing" src={shiba} alt="" />
                 </Grid>
-                <Grid item xs={12} sm={12} md={6}>
-                  <h1 className="title">
-                    Shiba <span>for</span> <span>President</span>
-                  </h1>
-                  {/* <div className="btn-title">
-                    <div className="buy">About Us</div>
-                    <div className="join_tg">Join Telegram</div>
-                  </div> */}
-                </Grid>
+                <Grid item xs={12} sm={12} md={6}></Grid>
               </Grid>
             </Box>
           </Container>
@@ -45,6 +38,9 @@ function Home() {
       </div>
       <div>
         <TimelineWithFeature />
+        <div>
+          <Timeline />
+        </div>
       </div>
       <div>
         <Footer />
