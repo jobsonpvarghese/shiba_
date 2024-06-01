@@ -37,6 +37,7 @@ const Roadmap = () => {
                     height: "100%",
                     zIndex: 99
                   }}
+                  alt="intro"
                 />
               </Box>
             </Grid>
