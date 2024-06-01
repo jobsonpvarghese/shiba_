@@ -1,12 +1,6 @@
 .container {
   background-color: #b22234;
   height: 100px;
-  margin: 0 auto;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
   width: 100%;
 }
 
@@ -17,6 +11,5 @@
     left: 0;
     width: 100%;
     transform: none;
-    border-radius: 0%;
   }
 }

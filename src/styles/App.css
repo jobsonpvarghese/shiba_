@@ -2,7 +2,6 @@
   background-color: #003285; /* Set the background image */
   background-size: cover; /* Cover the entire viewport */
   height: 100vh;
-  border-bottom: 1px dashed #f7b500;
 }
 .landing::before {
   content: "";
