@@ -1,7 +1,7 @@
 .landing {
   background-color: #003285; /* Set the background image */
   background-size: cover; /* Cover the entire viewport */
-  height: 100vh;
+  height: 105vh;
 }
 .landing::before {
   content: "";
@@ -15,7 +15,7 @@
 }
 
 .shiba_landing {
-  padding-top: 125px;
+  padding-top: 90px;
   width: 90%;
   height: auto;
 }
