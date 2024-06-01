@@ -3,11 +3,11 @@ import Navbar from "../components/Navbar/Navbar"
 import { Box, Container, Grid } from "@mui/material"
 import shiba from "../images/sh.png"
 import Roadmap from "../components/Roadmap/Roadmap"
-import Footer from "../components/footer/Footer"
+// import Footer from "../components/footer/Footer"
 import SocialMedia from "../components/social/SocialMedia"
 // import Timeline from "../components/timeline/Timeline"
 import TimelineWithFeature from "../components/timeline/TimelineWithFeature"
-import Timeline from "../components/timeline/Timeline"
+// import Timeline from "../components/timeline/Timeline"
 function Home() {
   return (
     <div>

@@ -4,10 +4,6 @@ import MenuIcon from "@mui/icons-material/Menu"
 import RightDrawer from "../drawer/RightDrawer"
 import logo from "../../images/logo.png"
 import ModalBox from "../modal/Modal"
-import { Link } from "react-router-dom"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTelegram } from "@fortawesome/free-brands-svg-icons"
-import { Box } from "@mui/material"
 import united from "../../images/icons/states.png"
 import dollar from "../../images/icons/dollar.png"
 import star from "../../images/icons/star.png"
@@ -40,59 +36,54 @@ const Navbar = () => {
         <div className={`join_header`}>
           <div class="marquee">
             <div class="marquee-content">
-              {Array.from({ length: 10 }).map(
-                (item, index) => (
-                  console.log(item),
-                  (
-                    <>
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          paddingLeft: "50px"
-                        }}
-                      >
-                        <img src={united} className="icon" alt="state" /> &nbsp;
-                        <span>President Shiba</span>
-                      </div>
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          paddingLeft: "50px"
-                        }}
-                      >
-                        <img src={dollar} className="icon" alt="state" /> &nbsp;
-                        <span>Vote 4 shiba</span>
-                      </div>
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          paddingLeft: "50px"
-                        }}
-                      >
-                        <img src={tg} className="icon" alt="state" /> &nbsp;
-                        <span>Join our telegram</span>
-                      </div>
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "center",
-                          paddingLeft: "50px"
-                        }}
-                      >
-                        <img src={star} className="icon" alt="state" /> &nbsp;
-                        <span>Vote 4 Shiba</span>
-                      </div>
-                    </>
-                  )
-                )
-              )}
+              {Array.from({ length: 10 }).map(item => (
+                <>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      paddingLeft: "50px"
+                    }}
+                  >
+                    <img src={united} className="icon" alt="state" /> &nbsp;
+                    <span>President Shiba</span>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      paddingLeft: "50px"
+                    }}
+                  >
+                    <img src={dollar} className="icon" alt="state" /> &nbsp;
+                    <span>Vote 4 shiba</span>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      paddingLeft: "50px"
+                    }}
+                  >
+                    <img src={tg} className="icon" alt="state" /> &nbsp;
+                    <span>Join our telegram</span>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      paddingLeft: "50px"
+                    }}
+                  >
+                    <img src={star} className="icon" alt="state" /> &nbsp;
+                    <span>Vote 4 Shiba</span>
+                  </div>
+                </>
+              ))}
             </div>
           </div>
         </div>
