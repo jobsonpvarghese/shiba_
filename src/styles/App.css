@@ -15,8 +15,8 @@
 }
 
 .shiba_landing {
-  padding-top: 70px;
-  width: 100%;
+  padding-top: 125px;
+  width: 90%;
   height: auto;
 }
 .title {
@@ -66,6 +66,7 @@
   .shiba_landing {
     width: 100%;
     height: auto;
+    padding-top: 100px;
   }
   .join_tg {
     margin-left: 5px;

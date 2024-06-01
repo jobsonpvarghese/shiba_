@@ -77,8 +77,9 @@ p {
   display: none;
 }
 .join_header {
-  background-color: #f7b500;
+  background-color: #b22234;
   width: 100%;
+  color: white;
 }
 
 .join_header p {
@@ -107,5 +108,30 @@ p {
   }
   .nav_responsive_ul li {
     padding: 20px;
+  }
+}
+
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 60px;
+  overflow-x: hidden;
+  padding-top: 10px;
+}
+
+.track {
+  position: absolute;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 32s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

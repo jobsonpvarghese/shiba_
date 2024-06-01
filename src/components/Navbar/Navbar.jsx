@@ -34,28 +34,35 @@ const Navbar = () => {
     <div>
       <div className={`navbar-container${isSticky ? "-sticky" : ""}`}>
         <div className={`join_header`}>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              backgroundColor: "#B22234"
-            }}
-          >
-            <Link
-              href="https://telegram.org"
-              target="_blank"
-              rel="noopener"
-              aria-label="Telegram"
-              style={{
-                color: "white"
-              }}
-            >
-              <FontAwesomeIcon icon={faTelegram} size="2x" />
-            </Link>
-            &nbsp;
-            <p className="text-shadow">Join our Telegram.</p>
-          </Box>
+          <div class="marquee">
+            <div class="track">
+              <div class="content">
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    backgroundColor: "#B22234"
+                  }}
+                >
+                  <Link
+                    href="https://telegram.org"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Telegram"
+                    style={{
+                      color: "black"
+                    }}
+                  >
+                    <FontAwesomeIcon icon={faTelegram} size="2x" />
+                  </Link>
+                  &nbsp;
+                  <p className="text-shadow">Join our Telegram.</p>
+                </Box>
+                <p>$vote 4 Shiba</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="nav_desktop">
           <div>
