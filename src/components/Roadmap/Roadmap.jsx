@@ -9,7 +9,7 @@ import house from "../../images/housevnyl.png"
 const Roadmap = () => {
   return (
     <div style={{}} className="roadmap">
-      <img src={introflag} className="introflag" />
+      <img src={introflag} className="introflag" alt="introflag" />
       <Container>
         <Box py={4}>
           <Grid container spacing={2} alignItems="center">
@@ -43,7 +43,7 @@ const Roadmap = () => {
           </Grid>
         </Box>
       </Container>
-      <img src={house} className="house" />
+      <img src={house} className="house" alt="whitehouse" />
     </div>
   )
 }
