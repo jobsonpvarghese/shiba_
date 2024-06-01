@@ -1,5 +1,5 @@
 .landing {
-  background-color: #0e46a3; /* Set the background image */
+  background-color: #003285; /* Set the background image */
   background-size: cover; /* Cover the entire viewport */
   height: 100vh;
   border-bottom: 1px dashed #f7b500;
@@ -28,7 +28,7 @@
   padding-top: 10%;
 }
 .title span {
-  color: #f7b500;
+  color: white;
   font-weight: 200;
 }
 .btn-title {
@@ -44,9 +44,8 @@
   cursor: pointer;
 }
 .join_tg {
-  color: #f7b500;
+  color: #b22234;
   font-size: 1.2rem;
-  border: 1px dashed #f7b500;
   padding: 1rem 2rem;
   margin-left: 20px;
   border-radius: 5rem;

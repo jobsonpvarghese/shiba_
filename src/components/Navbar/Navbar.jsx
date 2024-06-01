@@ -39,7 +39,7 @@ const Navbar = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              backgroundColor: "#f7b500"
+              backgroundColor: "#B22234"
             }}
           >
             <Link
@@ -48,7 +48,7 @@ const Navbar = () => {
               rel="noopener"
               aria-label="Telegram"
               style={{
-                color: "black"
+                color: "white"
               }}
             >
               <FontAwesomeIcon icon={faTelegram} size="2x" />

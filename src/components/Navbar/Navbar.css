@@ -10,7 +10,7 @@
   align-items: center;
   /* padding: 10px 20px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #0e46a3 !important;
+  background-color: #003285 !important;
 }
 .navbar-container-sticky {
   position: fixed;
@@ -24,7 +24,7 @@
   align-items: center;
   /* padding: 10px 20px; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #0e46a3 !important;
+  background-color: #003285 !important;
 }
 .nav_desktop {
   display: flex;
@@ -82,7 +82,7 @@ p {
 }
 
 .join_header p {
-  color: black;
+  color: white;
 }
 
 @media (max-width: 768px) {

@@ -240,7 +240,7 @@ UIA-TIMELINE
 }
 
 [data-uia-timeline-skin="4"] .uia-timeline__point {
-  background-color: var(--uia-timeline-point-background-color, #0e46a3);
+  background-color: var(--uia-timeline-point-background-color, #003285);
   color: #fff;
 }
 
@@ -511,11 +511,11 @@ UIA-TIMELINE
   */
 
 :root {
-  --uia-timeline-line-color: #0e46a3;
-  --uia-timeline-dot-color: #0e46a3;
-  --uia-timeline-arrow-color: #0e46a3;
+  --uia-timeline-line-color: #003285;
+  --uia-timeline-dot-color: #003285;
+  --uia-timeline-arrow-color: #003285;
   --uia-timeline-line-thickness: 3px;
-  --uia-timeline-point-border-color: #0e46a3;
+  --uia-timeline-point-border-color: #003285;
   --uia-timeline-group-padding: 1.5rem 1.5rem 1.25rem;
 }
 
@@ -524,7 +524,7 @@ UIA-TIMELINE
 }
 
 [data-uia-timeline-skin="3"] {
-  --uia-timeline-year-background-color: #0e46a3;
+  --uia-timeline-year-background-color: #003285;
 }
 
 .timeline-body {

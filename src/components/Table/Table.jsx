@@ -68,7 +68,7 @@ export default function DataTable() {
                     key={column.id}
                     align={column.align}
                     style={{ minWidth: column.minWidth }}
-                    sx={{ backgroundColor: "#0e46a3", color: "white" }}
+                    sx={{ backgroundColor: "#003285", color: "white" }}
                   >
                     {column.label}
                   </TableCell>
@@ -101,7 +101,7 @@ export default function DataTable() {
           page={page}
           onPageChange={handleChangePage}
           onRowsPerPageChange={handleChangeRowsPerPage}
-          sx={{ backgroundColor: "#0e46a3", color: "white" }}
+          sx={{ backgroundColor: "#003285", color: "white" }}
         />
       </Paper>
     </Container>

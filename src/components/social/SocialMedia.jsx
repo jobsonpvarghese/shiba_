@@ -21,7 +21,7 @@ const SocialMedia = () => {
                 rel="noopener"
                 aria-label="Telegram"
                 style={{
-                  color: "black"
+                  color: "white"
                 }}
               >
                 <FontAwesomeIcon icon={faTelegram} size="2x" />
@@ -34,7 +34,7 @@ const SocialMedia = () => {
                 rel="noopener"
                 aria-label="Twitter"
                 style={{
-                  color: "black"
+                  color: "white"
                 }}
               >
                 <FontAwesomeIcon icon={faTwitter} size="2x" />
@@ -47,7 +47,7 @@ const SocialMedia = () => {
                 rel="noopener"
                 aria-label="Instagram"
                 style={{
-                  color: "black"
+                  color: "white"
                 }}
               >
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
@@ -60,7 +60,7 @@ const SocialMedia = () => {
                 rel="noopener"
                 aria-label="TikTok"
                 style={{
-                  color: "black"
+                  color: "white"
                 }}
               >
                 <FontAwesomeIcon icon={faTiktok} size="2x" />
