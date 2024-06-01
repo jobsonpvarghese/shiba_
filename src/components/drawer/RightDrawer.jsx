@@ -23,7 +23,7 @@ const RightDrawer = ({ children, open, onClose, onOpen, className }) => {
           "& .MuiDrawer-paper": {
             width: drawerWidth,
             boxSizing: "border-box",
-            backgroundColor: "#003285" // Change this to your desired color
+            backgroundColor: "#b22234" // Change this to your desired color
           }
         }}
       >

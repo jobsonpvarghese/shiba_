@@ -26,7 +26,15 @@ function Home() {
                 </Grid>
                 <Grid item xs={12} sm={12} md={6}>
                   <h1 className="title">
-                    Shiba <span>for</span> <span>President</span>
+                    Shiba <span>for</span>{" "}
+                    <span
+                      className="Pres"
+                      style={{
+                        backgroundColor: "#b22234"
+                      }}
+                    >
+                      President
+                    </span>
                   </h1>
                   {/* <div className="btn-title">
                     <div className="buy">About Us</div>
@@ -46,13 +54,10 @@ function Home() {
       </div>
       <div>
         <TimelineWithFeature />
-        <div>
-          <Timeline />
-        </div>
       </div>
-      <div>
+      {/* <div>
         <Footer />
-      </div>
+      </div> */}
     </div>
   )
 }

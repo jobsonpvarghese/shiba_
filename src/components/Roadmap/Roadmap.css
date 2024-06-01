@@ -1,6 +1,7 @@
 .roadmap {
   padding-top: 10%;
   padding-bottom: 10%;
+  position: relative;
 }
 
 .roadmap h1 {
@@ -12,7 +13,7 @@
   width: 50%;
   height: auto;
   position: absolute;
-  top: 112.4vh;
+  top: 0;
   right: 0;
   z-index: -99;
 }
@@ -21,14 +22,14 @@
   width: 50%;
   height: auto;
   position: absolute;
-  top: 172vh;
+  bottom: 0;
   left: 0;
   z-index: -99;
 }
 
 .intro-text {
   position: absolute;
-  top: 112.4vh;
+  top: 0;
   left: 0;
   width: 40%;
   height: auto;
@@ -47,16 +48,18 @@
     padding-bottom: 20%;
   }
   .introflag {
-    display: none;
+    display: absolute;
+    width: 100%;
   }
   .house {
-    display: none;
+    display: absolute;
+    width: 100%;
   }
   .intro-text {
     position: relative;
     top: 0px;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: auto;
     z-index: 1;
     padding: 1%;

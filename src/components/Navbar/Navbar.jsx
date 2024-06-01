@@ -8,6 +8,10 @@ import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTelegram } from "@fortawesome/free-brands-svg-icons"
 import { Box } from "@mui/material"
+import united from "../../images/icons/states.png"
+import dollar from "../../images/icons/dollar.png"
+import star from "../../images/icons/star.png"
+import tg from "../../images/icons/telegram.png"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -35,32 +39,60 @@ const Navbar = () => {
       <div className={`navbar-container${isSticky ? "-sticky" : ""}`}>
         <div className={`join_header`}>
           <div class="marquee">
-            <div class="track">
-              <div class="content">
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    backgroundColor: "#B22234"
-                  }}
-                >
-                  <Link
-                    href="https://telegram.org"
-                    target="_blank"
-                    rel="noopener"
-                    aria-label="Telegram"
-                    style={{
-                      color: "black"
-                    }}
-                  >
-                    <FontAwesomeIcon icon={faTelegram} size="2x" />
-                  </Link>
-                  &nbsp;
-                  <p className="text-shadow">Join our Telegram.</p>
-                </Box>
-                <p>$vote 4 Shiba</p>
-              </div>
+            <div class="marquee-content">
+              {Array.from({ length: 10 }).map(
+                (item, index) => (
+                  console.log(item),
+                  (
+                    <>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          paddingLeft: "50px"
+                        }}
+                      >
+                        <img src={united} className="icon" alt="state" /> &nbsp;
+                        <span>President Shiba</span>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          paddingLeft: "50px"
+                        }}
+                      >
+                        <img src={dollar} className="icon" alt="state" /> &nbsp;
+                        <span>Vote 4 shiba</span>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          paddingLeft: "50px"
+                        }}
+                      >
+                        <img src={tg} className="icon" alt="state" /> &nbsp;
+                        <span>Join our telegram</span>
+                      </div>
+                      <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          paddingLeft: "50px"
+                        }}
+                      >
+                        <img src={star} className="icon" alt="state" /> &nbsp;
+                        <span>Vote 4 Shiba</span>
+                      </div>
+                    </>
+                  )
+                )
+              )}
             </div>
           </div>
         </div>
