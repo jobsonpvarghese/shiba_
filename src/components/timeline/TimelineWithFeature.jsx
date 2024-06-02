@@ -1,6 +1,9 @@
 import React from "react"
 import "./timeline.css"
-import feature1 from "../../images/shiba.png"
+import CommunityGovernance from "../../images/CommunityGovernance.png"
+import SolanaBloackchain from "../../images/SolanaBloackchain.png"
+import CommunityEngagement from "../../images/CommunityEngagement.png"
+
 const TimelineWithFeature = () => {
   const data = [
     {
@@ -44,7 +47,7 @@ const TimelineWithFeature = () => {
                     <div className="uia-card__body">
                       <p>{data[0].description}</p>
                       <img
-                        src={feature1}
+                        src={CommunityGovernance}
                         alt=""
                         style={{
                           width: "100%",
@@ -67,7 +70,7 @@ const TimelineWithFeature = () => {
                     <div className="uia-card__body">
                       <p>{data[1].description}</p>
                       <img
-                        src={feature1}
+                        src={SolanaBloackchain}
                         alt=""
                         style={{
                           width: "100%",
@@ -99,7 +102,7 @@ const TimelineWithFeature = () => {
                     <div className="uia-card__body">
                       <p>{data[2].description}</p>
                       <img
-                        src={feature1}
+                        src={SolanaBloackchain}
                         alt=""
                         style={{
                           width: "100%",
@@ -122,7 +125,7 @@ const TimelineWithFeature = () => {
                     <div className="uia-card__body">
                       <p>{data[3].description}</p>
                       <img
-                        src={feature1}
+                        src={CommunityEngagement}
                         alt=""
                         style={{
                           width: "100%",
