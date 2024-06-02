@@ -2,6 +2,7 @@ import React from "react"
 import "./timeline.css"
 import CommunityGovernance from "../../images/CommunityGovernance.png"
 import SolanaBloackchain from "../../images/SolanaBloackchain.png"
+import YeildFarming from "../../images/YeildFarming.png"
 import CommunityEngagement from "../../images/CommunityEngagement.png"
 
 const TimelineWithFeature = () => {
@@ -102,7 +103,7 @@ const TimelineWithFeature = () => {
                     <div className="uia-card__body">
                       <p>{data[2].description}</p>
                       <img
-                        src={SolanaBloackchain}
+                        src={YeildFarming}
                         alt=""
                         style={{
                           width: "100%",
