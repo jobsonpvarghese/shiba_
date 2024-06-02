@@ -183,7 +183,7 @@ UIA-TIMELINE
   inline-size: fit-content;
   padding: var(--uia-timeline-year-padding, 0.25rem 0.75rem);
   background-color: var(--uia-timeline-year-background-color, var(--_uia-timeline-line-color_default));
-  color: var(--uia-timeline-year-color, rgb(178, 34, 52));
+  color: var(--uia-timeline-year-color, #b22234);
 }
 
 [data-uia-timeline-adapter-skin-3="uia-card-skin-#1"] {
@@ -268,7 +268,7 @@ UIA-TIMELINE
 
   display: grid;
   place-items: center;
-  background-color: var(--uia-timeline-year-background-color, rgb(178, 34, 52));
+  background-color: var(--uia-timeline-year-background-color, #b22234);
 
   font-size: var(--uia-timeline-year-font-size, 0.75rem);
   color: var(--uia-timeline-year-color, #222);
@@ -447,7 +447,7 @@ UIA-TIMELINE
   grid-row: 1 / 1;
   inline-size: fit-content;
   padding: var(--uia-card-time-padding, 0.25rem 1.25rem 0.25rem);
-  background-color: var(--uia-card-time-background-color, rgb(178, 34, 52));
+  background-color: var(--uia-card-time-background-color, #b22234);
 
   font-weight: var(--uia-card-time-font-weight, 700);
   font-size: var(--uia-card-time-font-size, 0.75rem);
@@ -520,7 +520,7 @@ UIA-TIMELINE
 }
 
 .timeline-5-2 {
-  --uia-timeline-line-mask-color: rgb(178, 34, 52);
+  --uia-timeline-line-mask-color: #b22234;
 }
 
 [data-uia-timeline-skin="3"] {
@@ -529,7 +529,7 @@ UIA-TIMELINE
 
 .timeline-body {
   color: rgb(222, 222, 222);
-  background-color: rgb(178, 34, 52);
+  background-color: #b22234;
   margin: 0;
   display: flex;
   flex-direction: column;
