@@ -112,10 +112,15 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
+                <a href="#tokenomics" className="nav-item">
+                  Tokenomics
+                </a>
+              </li>
+              {/* <li>
                 <a href="/leaderboard" className="nav-item">
                   Leaderboard
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="nav_responsive">
@@ -139,8 +144,11 @@ const Navbar = () => {
                   <a href="/whitepaper">White Paper</a>
                 </li>
                 <li>
-                  <a href="/leaderboard">Leaderboard</a>
+                  <a href="#tokenomics">Tokenomics</a>
                 </li>
+                {/* <li>
+                  <a href="/leaderboard">Leaderboard</a>
+                </li> */}
               </ul>
             </RightDrawer>
           </div>

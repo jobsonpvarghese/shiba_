@@ -29,7 +29,13 @@ const TimelineWithFeature = () => {
     }
   ]
   return (
-    <div className="timeline-body">
+    <div
+      className="timeline-body"
+      style={{
+        paddingTop: "5%",
+        paddingBottom: "5%"
+      }}
+    >
       <h1>Key Features</h1>
       <div className="page timeline-5-2" data-uia-timeline-skin="5" data-uia-timeline-adapter-skin-5="uia-card">
         <div className="uia-timeline">

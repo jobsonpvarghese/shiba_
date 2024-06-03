@@ -3,7 +3,7 @@ import { Grid, Typography, Link, Box } from "@mui/material"
 
 const Footer = () => {
   return (
-    <Box component="footer" sx={{ p: 3, backgroundColor: "#003285", color: "white" }}>
+    <Box component="footer" sx={{ p: 3, backgroundColor: "#b22234", color: "white" }}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6} md={4}>
           <Typography variant="h6">About Us</Typography>
@@ -17,11 +17,10 @@ const Footer = () => {
           <Typography variant="h6">Contact</Typography>
           <Typography variant="body2">
             Email:{" "}
-            <Link sx={{ color: "white" }} href="mailto:contact@company.com">
-              contact@company.com
+            <Link sx={{ color: "white" }} href="mailto:contact@vote4shiba.com">
+              contact@vote4shiba.com
             </Link>
           </Typography>
-          <Typography variant="body2">Phone: (123) 456-7890</Typography>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <Typography variant="h6">Follow Us</Typography>

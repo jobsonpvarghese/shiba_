@@ -1,13 +1,13 @@
 import React from "react"
 import Navbar from "../components/Navbar/Navbar"
-import DataTable from "../components/Table/Table"
-import Footer from "../components/footer/Footer"
+// import DataTable from "../components/Table/Table"
+// import Footer from "../components/footer/Footer"
 
 const LeaderBoard = () => {
   return (
     <div>
       <Navbar />
-      <div>
+      {/* <div>
         <h1
           style={{
             textAlign: "center",
@@ -26,7 +26,7 @@ const LeaderBoard = () => {
         <DataTable />
       </div>
 
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }

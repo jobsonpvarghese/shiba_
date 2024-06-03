@@ -1,0 +1,27 @@
+.tokenomics {
+  background-color: #003285;
+  padding-bottom: 5%;
+  position: relative;
+  padding-top: 10%;
+}
+
+.circle {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 20%;
+}
+
+.img-tok {
+  width: 100%;
+  height: auto;
+}
+
+/* for mobile device */
+@media only screen and (max-width: 600px) {
+  .circle {
+    width: 50%;
+    top: 2%;
+    left: 2%;
+  }
+}
