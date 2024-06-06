@@ -2,16 +2,31 @@
   height: auto;
   width: 200px;
 }
+.image-container {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.logofooter {
+  height: auto;
+  width: 60%;
+  display: inline-block; /* Makes the image respect text alignment */
+}
+
 .footer-container {
   padding: 5%;
-  background: #b22234;
-  color: white;
+  background: white;
+  color: black;
+}
+.footer-container p {
+  color: rgba(0, 0, 0, 0.62);
+  font-weight: 300;
 }
 
 .icon-item {
   display: flex;
   flex-direction: row;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   padding-bottom: 5px;
   width: 150px;
   cursor: pointer;
@@ -19,7 +34,7 @@
 }
 .icon-item a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 .icon {
   height: 20px;
