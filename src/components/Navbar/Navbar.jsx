@@ -9,9 +9,8 @@ import dollar from "../../images/icons/dollar.png"
 import star from "../../images/icons/star.png"
 import tg from "../../images/icons/telegram.png"
 
-const Navbar = () => {
+const Navbar = ({ openModal, setOpenModal }) => {
   const [isOpen, setIsOpen] = useState(false)
-  const [openModal, setOpenModal] = useState(false)
   const [isSticky, setIsSticky] = useState(false)
 
   const handleOpen = () => setOpenModal(true)

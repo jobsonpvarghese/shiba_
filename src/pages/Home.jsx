@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Navbar from "../components/Navbar/Navbar"
 import { Box, Container, Grid } from "@mui/material"
 import shiba from "../images/sh.png"
@@ -9,10 +9,12 @@ import TimelineWithFeature from "../components/timeline/TimelineWithFeature"
 import Tokenomics from "../components/tokenomics/Tokenomics"
 
 function Home() {
+  const [openModal, setOpenModal] = useState(false)
+
   return (
     <div>
       <div className="landing">
-        <Navbar />
+        <Navbar openModal={openModal} setOpenModal={setOpenModal} />
         <div
           style={{
             paddingTop: "50px"
@@ -36,10 +38,14 @@ function Home() {
                       President
                     </span>
                   </h1>
-                  {/* <div className="btn-title">
-                    <div className="buy">About Us</div>
-                    <div className="join_tg">Join Telegram</div>
-                  </div> */}
+                  <div className="btn-title">
+                    <div className="buy" onClick={() => setOpenModal(true)}>
+                      Buy Shiba
+                    </div>
+                    <a className="join_tg" href="#tokenomics">
+                      Tokenomics
+                    </a>
+                  </div>
                 </Grid>
               </Grid>
             </Box>

@@ -32,24 +32,28 @@
 }
 .btn-title {
   display: flex;
+  justify-content: center;
 }
 .buy {
-  background-color: #f7b500;
-  color: black;
+  background-color: #b22234;
+  color: white;
   font-size: 1.2rem;
   padding: 1rem 2rem;
   border-radius: 5rem;
-  margin-top: 1rem;
   cursor: pointer;
 }
 .join_tg {
-  color: #b22234;
+  color: white;
   font-size: 1.2rem;
   padding: 1rem 2rem;
   margin-left: 20px;
   border-radius: 5rem;
-  margin-top: 1rem;
+  border: 1px dashed white;
   cursor: pointer;
+  text-decoration: none;
+}
+.join_tg:hover {
+  border: 1px solid white;
 }
 @media (max-width: 768px) {
   .landing {
