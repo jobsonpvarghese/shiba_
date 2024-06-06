@@ -70,6 +70,10 @@ const DonutChart = () => {
   return (
     <div style={{ textAlign: "center", width: isMobile ? "100%" : "90%" }} className="chart-container">
       <h1 className="chart-title">Shibanomics</h1>
+
+      <div style={{ height: isMobile ? "350px" : "400px", padding: 0 }}>
+        <HighchartsReact highcharts={Highcharts} options={getOptions(isMobile)} ref={chartRef} />
+      </div>
       <div className="details">
         {seriesData.map((dataPoint, index) => (
           <div key={index} className="legend-item">
@@ -86,9 +90,6 @@ const DonutChart = () => {
             </span>
           </div>
         ))}
-      </div>
-      <div style={{ height: isMobile ? "400px" : "400px", padding: 0 }}>
-        <HighchartsReact highcharts={Highcharts} options={getOptions(isMobile)} ref={chartRef} />
       </div>
     </div>
   )

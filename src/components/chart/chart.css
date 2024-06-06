@@ -53,15 +53,25 @@
 .details {
   margin-bottom: 5%;
   color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
 }
 .legend-item {
   display: flex;
-  padding-left: 10%;
   padding-bottom: 5px;
+  padding-bottom: 5px;
+  padding-left: 10%;
 }
 /* mobile css */
 
 @media (max-width: 768px) {
+  .details {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
   .legend-item {
     display: flex;
     padding-left: 10%;
