@@ -10,7 +10,7 @@ const Tokenomics = () => {
     <div className="tokenomics" id="tokenomics">
       <Container>
         <Box py={4}>
-          <Grid container spacing={2} alignItems="center">
+          <Grid container spacing={5} alignItems="center">
             <Grid item xs={12} md={8}>
               <img className="circle" src={circle} alt="" />
               <Box>

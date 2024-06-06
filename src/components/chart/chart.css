@@ -8,6 +8,7 @@
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   position: relative; /* Required for positioning the tooltip */
+  z-index: 999;
 }
 .chart-title {
   font-size: 40px;
@@ -48,4 +49,22 @@
 .bar-segment.hovered {
   transform: scaleY(2.1);
   z-index: 999; /* Ensure the hovered segment is on top */
+}
+.details {
+  margin-bottom: 5%;
+  color: white;
+}
+.legend-item {
+  display: flex;
+  padding-left: 10%;
+  padding-bottom: 5px;
+}
+/* mobile css */
+
+@media (max-width: 768px) {
+  .legend-item {
+    display: flex;
+    padding-left: 10%;
+    padding-bottom: 5px;
+  }
 }

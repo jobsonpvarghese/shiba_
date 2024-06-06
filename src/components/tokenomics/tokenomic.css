@@ -10,11 +10,14 @@
   top: 5%;
   left: 5%;
   width: 20%;
+  z-index: 1;
 }
 
 .img-tok {
   width: 100%;
   height: auto;
+  z-index: 999;
+  position: relative;
 }
 
 /* for mobile device */
@@ -22,6 +25,6 @@
   .circle {
     width: 50%;
     top: 2%;
-    left: 2%;
+    left: 1%;
   }
 }
