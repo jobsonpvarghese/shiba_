@@ -10,19 +10,22 @@ const Tokenomics = () => {
     <div className="tokenomics" id="tokenomics">
       <Container>
         <Box py={4}>
-          <Grid container spacing={5} alignItems="center">
+          <img className="circle" src={circle} alt="" />
+          <Grid container spacing={2} alignItems="center" className="toke-container">
             <Grid item xs={12} md={8}>
-              <img className="circle" src={circle} alt="" />
               <Box>
                 <HorizontalStackedBarChart />
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
               <img src={shiba} className="img-tok" alt="intro" />
+              <div className="cont">
+                <div className="buy-tok">Buy Shiba</div>
+              </div>
             </Grid>
-            <img className="circle2" src={circle} alt="" />
           </Grid>
         </Box>
+        <img className="circle2" src={circle} alt="" />
       </Container>
     </div>
   )
