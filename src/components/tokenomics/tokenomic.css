@@ -13,6 +13,14 @@
   z-index: 1;
 }
 
+.circle2 {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 20%;
+  z-index: 1;
+}
+
 .img-tok {
   width: 100%;
   height: auto;

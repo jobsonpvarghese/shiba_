@@ -20,6 +20,7 @@ const Tokenomics = () => {
             <Grid item xs={12} md={4}>
               <img src={shiba} className="img-tok" alt="intro" />
             </Grid>
+            <img className="circle2" src={circle} alt="" />
           </Grid>
         </Box>
       </Container>
