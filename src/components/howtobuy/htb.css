@@ -1,0 +1,96 @@
+/* HowToBuy.css */
+
+.how-to-buy-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #1877f2; /* Light blue background */
+}
+
+.title-htb {
+  font-size: 25px;
+  color: white; /* Dark blue text */
+  margin-bottom: 20px;
+}
+
+.steps-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 4%;
+}
+
+.step-card {
+  background-color: #b22234; /* White background */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 300px; /* Flex properties for responsive design */
+  max-width: 300px;
+  height: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.step-card::after {
+  content: "→";
+  font-size: 2em;
+  color: #b22234; /* Dark blue text */
+  position: absolute;
+  right: -40px; /* Adjust based on your layout */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.step-card:last-child::after {
+  display: none; /* Hide the arrow for the last step */
+}
+
+.icon-htb {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.step-title {
+  font-size: 1.5em;
+  color: #ebebebd0; /* Dark blue text */
+  margin-bottom: 10px;
+}
+
+.step-description {
+  font-size: 1em;
+  color: #ebebebb1; /* Black text */
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-card {
+    margin-bottom: 40px; /* Add space for the down arrow */
+  }
+
+  .step-card::after {
+    content: "↓";
+    right: 50%; /* Center horizontally */
+    top: auto;
+    bottom: -40px; /* Adjust based on your layout */
+    transform: translateX(50%);
+  }
+
+  .step-card:last-child::after {
+    display: none; /* Hide arrows on the last step */
+  }
+}

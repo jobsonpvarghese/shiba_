@@ -12,6 +12,7 @@ import Mc from "../components/mc/Mc"
 import Counter from "../components/counter/Counter"
 // Import canvas-confetti
 import confetti from "canvas-confetti"
+import HowToBuy from "../components/howtobuy/HowToBuy"
 
 function Home() {
   const [openModal, setOpenModal] = useState(false)
@@ -76,6 +77,9 @@ function Home() {
       </div>
       <div>
         <Intro />
+      </div>
+      <div>
+        <HowToBuy />
       </div>
       <div>
         <TimelineWithFeature />
