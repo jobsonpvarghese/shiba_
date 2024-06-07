@@ -67,7 +67,8 @@ const ModalBox = ({ open, handleClose }) => {
             </Tooltip>
           </Box>
           <Typography variant="body2" mt={2} color={"white"}>
-            *Send the desired amount of SOL to the above address, and the equivalent amount of Shiba will be sent to your wallet.
+            *Send the desired amount of SOL to the above address, and the equivalent amount of Shiba will be sent to your wallet. Don't send from any
+            exchange.
           </Typography>
         </Box>
       </Modal>
