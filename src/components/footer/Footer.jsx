@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
               <div className="icon-item">
                 <img src={X} alt="X" className="icon" />
-                <a href="https://x.com/i/flow/login?redirect_after_login=%2FVote4Shiba">X</a>
+                <a href="https://x.com/Vote4Shiba">X</a>
               </div>
               <div className="icon-item">
                 <img src={medium} alt="Medium" className="icon" />

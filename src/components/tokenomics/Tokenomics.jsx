@@ -5,7 +5,7 @@ import HorizontalStackedBarChart from "../chart/Chart"
 import "./tokenomic.css"
 import circle from "../../images/circle.png"
 
-const Tokenomics = ({ setOpenModal }) => {
+const Tokenomics = ({ setOpenModal, triggerConfetti }) => {
   return (
     <div className="tokenomics" id="tokenomics">
       <Container>
@@ -20,7 +20,13 @@ const Tokenomics = ({ setOpenModal }) => {
             <Grid item xs={12} md={4}>
               <img src={shiba} className="img-tok" alt="intro" />
               <div className="cont">
-                <div className="buy-tok" onClick={() => setOpenModal(true)}>
+                <div
+                  className="buy-tok"
+                  onClick={() => {
+                    triggerConfetti()
+                    setOpenModal(true)
+                  }}
+                >
                   Buy Shiba
                 </div>
               </div>

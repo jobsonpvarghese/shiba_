@@ -9,7 +9,7 @@ const style = {
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: {
-    xs: "70%", // 90% width for extra-small screens
+    xs: "90%", // 90% width for extra-small screens
     sm: 400 // 400px width for small screens and up
   },
   background: "#b22234",

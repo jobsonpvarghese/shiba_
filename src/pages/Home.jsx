@@ -10,10 +10,19 @@ import Tokenomics from "../components/tokenomics/Tokenomics"
 import Roadmap from "../components/Roadmap/Roadmap"
 import Mc from "../components/mc/Mc"
 import Counter from "../components/counter/Counter"
+// Import canvas-confetti
+import confetti from "canvas-confetti"
 
 function Home() {
   const [openModal, setOpenModal] = useState(false)
 
+  const triggerConfetti = () => {
+    confetti({
+      particleCount: 300,
+      spread: 200,
+      origin: { y: 0.8 }
+    })
+  }
   return (
     <div>
       <div className="landing">
@@ -42,7 +51,13 @@ function Home() {
                     </span>
                   </h1>
                   <div className="btn-title">
-                    <div className="buy" onClick={() => setOpenModal(true)}>
+                    <div
+                      className="buy"
+                      onClick={() => {
+                        triggerConfetti()
+                        setOpenModal(true)
+                      }}
+                    >
                       Buy Shiba
                     </div>
                     <a className="join_tg" href="#tokenomics">
@@ -65,7 +80,7 @@ function Home() {
       <div>
         <TimelineWithFeature />
       </div>
-      <Tokenomics setOpenModal={setOpenModal} />
+      <Tokenomics setOpenModal={setOpenModal} triggerConfetti={() => triggerConfetti()} />
       <div>
         <Roadmap />
         <Mc />

@@ -16,13 +16,7 @@ const SocialMedia = () => {
               </Link>
             </Grid>
             <Grid item>
-              <Link
-                href="https://x.com/i/flow/login?redirect_after_login=%2FVote4Shiba"
-                target="_blank"
-                rel="noopener"
-                aria-label="Twitter"
-                style={{ color: "white" }}
-              >
+              <Link href="https://x.com/Vote4Shiba" target="_blank" rel="noopener" aria-label="Twitter" style={{ color: "white" }}>
                 <FontAwesomeIcon icon={faXTwitter} size="2x" />
               </Link>
             </Grid>
