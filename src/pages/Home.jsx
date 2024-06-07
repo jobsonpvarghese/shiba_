@@ -2,11 +2,13 @@ import React, { useState } from "react"
 import Navbar from "../components/Navbar/Navbar"
 import { Box, Container, Grid } from "@mui/material"
 import shiba from "../images/sh.png"
-import Roadmap from "../components/Roadmap/Roadmap"
+import Intro from "../components/Intro/Intro"
 import Footer from "../components/footer/Footer"
 import SocialMedia from "../components/social/SocialMedia"
 import TimelineWithFeature from "../components/timeline/TimelineWithFeature"
 import Tokenomics from "../components/tokenomics/Tokenomics"
+import Roadmap from "../components/Roadmap/Roadmap"
+import Mc from "../components/mc/Mc"
 
 function Home() {
   const [openModal, setOpenModal] = useState(false)
@@ -56,13 +58,15 @@ function Home() {
         <SocialMedia />
       </div>
       <div>
-        <Roadmap />
+        <Intro />
       </div>
       <div>
         <TimelineWithFeature />
       </div>
-      <Tokenomics />
+      <Tokenomics setOpenModal={setOpenModal} />
       <div>
+        <Roadmap />
+        <Mc />
         <Footer />
       </div>
     </div>

@@ -1,0 +1,70 @@
+.roadmap {
+  padding-top: 10%;
+  padding-bottom: 10%;
+  position: relative;
+}
+
+.roadmap h1 {
+  color: #b22234;
+  font-size: 40px;
+}
+
+.introflag {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -99;
+}
+
+.house {
+  width: 50%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+
+.intro-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: auto;
+  z-index: 1;
+  padding: 5%;
+}
+
+.intro-text h1 {
+  font-size: 49px;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .roadmap {
+    padding-top: 20%;
+    padding-bottom: 20%;
+  }
+  .introflag {
+    display: absolute;
+    width: 100%;
+  }
+  .house {
+    display: absolute;
+    width: 100%;
+  }
+  .intro-text {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 90%;
+    height: auto;
+    z-index: 1;
+    padding: 1%;
+  }
+  .intro-text h1 {
+    font-size: 39px;
+  }
+}

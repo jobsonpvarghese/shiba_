@@ -41,3 +41,16 @@
   width: auto;
   padding-right: 5px;
 }
+
+.right-grid {
+  padding-left: 20% !important;
+  border-left: 1px solid black;
+  margin-left: 20%;
+}
+@media (max-width: 768px) {
+  .right-grid {
+    padding-left: 0% !important;
+    border-left: none;
+    margin-left: 0%;
+  }
+}

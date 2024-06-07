@@ -1,7 +1,7 @@
 import React from "react"
 import { Grid, Box, Link } from "@mui/material"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTelegram, faTwitter, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons"
+import { faTelegram, faReddit, faMedium, faXTwitter, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons"
 import "./Social.css"
 
 const SocialMedia = () => {
@@ -16,7 +16,7 @@ const SocialMedia = () => {
           <Grid container spacing={5} justifyContent="center" alignItems="center">
             <Grid item>
               <Link
-                href="https://telegram.org"
+                href="https://t.me/vote4shiba"
                 target="_blank"
                 rel="noopener"
                 aria-label="Telegram"
@@ -29,7 +29,7 @@ const SocialMedia = () => {
             </Grid>
             <Grid item>
               <Link
-                href="https://twitter.com"
+                href="https://x.com/i/flow/login?redirect_after_login=%2FVote4Shiba"
                 target="_blank"
                 rel="noopener"
                 aria-label="Twitter"
@@ -37,15 +37,41 @@ const SocialMedia = () => {
                   color: "white"
                 }}
               >
-                <FontAwesomeIcon icon={faTwitter} size="2x" />
+                <FontAwesomeIcon icon={faXTwitter} size="2x" />
               </Link>
             </Grid>
             <Grid item>
               <Link
-                href="https://instagram.com"
+                href="https://www.reddit.com/r/Vote4Shiba/?rdt=46456"
                 target="_blank"
                 rel="noopener"
                 aria-label="Instagram"
+                style={{
+                  color: "white"
+                }}
+              >
+                <FontAwesomeIcon icon={faReddit} size="2x" />
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link
+                href="https://medium.com/@vote4shiba"
+                target="_blank"
+                rel="noopener"
+                aria-label="TikTok"
+                style={{
+                  color: "white"
+                }}
+              >
+                <FontAwesomeIcon icon={faMedium} size="2x" />
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link
+                href="https://medium.com/@vote4shiba"
+                target="_blank"
+                rel="noopener"
+                aria-label="TikTok"
                 style={{
                   color: "white"
                 }}
@@ -55,7 +81,7 @@ const SocialMedia = () => {
             </Grid>
             <Grid item>
               <Link
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@vote4shiba?_t=8mzCQ82zcFK&_r=1"
                 target="_blank"
                 rel="noopener"
                 aria-label="TikTok"

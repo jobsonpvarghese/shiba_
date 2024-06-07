@@ -111,6 +111,11 @@ const Navbar = ({ openModal, setOpenModal }) => {
                 </a>
               </li>
               <li>
+                <a href="#roadmap" className="nav-item">
+                  Roadmap
+                </a>
+              </li>
+              <li>
                 <a href="#tokenomics" className="nav-item">
                   Tokenomics
                 </a>
@@ -119,7 +124,9 @@ const Navbar = ({ openModal, setOpenModal }) => {
                 <a href="/leaderboard" className="nav-item">
                   Leaderboard
                 </a>
-              </li> */}
+              </li> 
+             
+              */}
             </ul>
           </nav>
           <div className="nav_responsive">
@@ -141,6 +148,9 @@ const Navbar = ({ openModal, setOpenModal }) => {
                 </li>
                 <li>
                   <a href="/whitepaper">White Paper</a>
+                </li>
+                <li>
+                  <a href="#roadmap">Roadmap</a>
                 </li>
                 <li>
                   <a href="#tokenomics">Tokenomics</a>
