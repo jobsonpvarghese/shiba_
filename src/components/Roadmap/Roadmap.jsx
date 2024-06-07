@@ -1,6 +1,6 @@
 import React from "react"
 import rdlogo from "../../images/rdlogo.png"
-import "./roadmap.css"
+import "./rd.css"
 import phase1 from "../../images/phase1.jpeg"
 import phase2 from "../../images/phase2.jpeg"
 import phase3 from "../../images/phase3.jpeg"
