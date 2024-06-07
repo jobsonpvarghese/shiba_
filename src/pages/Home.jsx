@@ -13,6 +13,7 @@ import Counter from "../components/counter/Counter"
 // Import canvas-confetti
 import confetti from "canvas-confetti"
 import HowToBuy from "../components/howtobuy/HowToBuy"
+import Partner from "../components/partner/Partner"
 
 function Home() {
   const [openModal, setOpenModal] = useState(false)
@@ -88,6 +89,7 @@ function Home() {
       <div>
         <Roadmap />
         <Mc />
+        <Partner />
         <Footer />
       </div>
     </div>
