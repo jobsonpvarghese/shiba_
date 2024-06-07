@@ -69,7 +69,7 @@ const DonutChart = () => {
 
   return (
     <div style={{ textAlign: "center", width: isMobile ? "100%" : "90%" }} className="chart-container">
-      <h1 className="chart-title">Shibanomics</h1>
+      <h1 className="chart-title">SHIBANOMICS - 7000000000 $VOTESHIBA</h1>
 
       <div style={{ height: isMobile ? "350px" : "400px", padding: 0 }}>
         <HighchartsReact highcharts={Highcharts} options={getOptions(isMobile)} ref={chartRef} />

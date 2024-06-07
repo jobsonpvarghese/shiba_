@@ -20,6 +20,22 @@ const Tokenomics = ({ setOpenModal, triggerConfetti }) => {
             <Grid item xs={12} md={4}>
               <img src={shiba} className="img-tok" alt="intro" />
               <div className="cont">
+                <p
+                  style={{
+                    border: "1px solid white",
+                    padding: "5px",
+                    borderRadius: "10px"
+                  }}
+                >
+                  1 SOL ={" "}
+                  <span
+                    style={{
+                      fontWeight: "bold"
+                    }}
+                  >
+                    700000 $VOTESHIBA
+                  </span>
+                </p>
                 <div
                   className="buy-tok"
                   onClick={() => {
