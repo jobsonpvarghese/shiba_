@@ -3,54 +3,59 @@ import React, { useState, useEffect } from "react"
 import { Box, Typography, Grid, Paper } from "@mui/material"
 
 const CountdownTimer = ({ targetDate }) => {
-  const calculateTimeLeft = () => {
-    const difference = +new Date(targetDate) - +new Date()
-    let timeLeft = {}
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
 
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60)
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const now = new Date().getTime()
+      const distance = targetDate - now
+
+      if (distance < 0) {
+        clearInterval(timer)
+        return { days: 0, hours: 0, minutes: 0, seconds: 0 }
+      }
+
+      return {
+        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((distance % (1000 * 60)) / 1000)
       }
     }
 
-    console.log(`Time left: ${JSON.stringify(timeLeft)}`)
-    return timeLeft
-  }
-
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft())
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
+    const timer = setInterval(() => {
       setTimeLeft(calculateTimeLeft())
     }, 1000)
 
-    return () => clearTimeout(timer)
-  })
-
-  const timerComponents = []
-
-  Object.keys(timeLeft).forEach(interval => {
-    if (!timeLeft[interval]) {
-      return
-    }
-
-    timerComponents.push(
-      <Grid item key={interval}>
-        <Paper elevation={3} style={{ padding: "10px", textAlign: "center", minWidth: "60px" }}>
-          <Typography variant="h4">{timeLeft[interval]}</Typography>
-          <Typography variant="subtitle1">{interval}</Typography>
-        </Paper>
-      </Grid>
-    )
-  })
+    return () => clearInterval(timer)
+  }, [targetDate])
 
   return (
-    <Box sx={{ p: 4 }}>
+    <Box sx={{ pt: 4, pb: 4 }}>
       <Grid container spacing={2} justifyContent="center">
-        {timerComponents.length ? timerComponents : <Typography variant="h4">Time's up!</Typography>}
+        {["days", "hours", "minutes", "seconds"].map(unit => (
+          <Grid item key={unit}>
+            <Paper elevation={3} style={{ padding: "10px", textAlign: "center" }}>
+              <Typography
+                variant="h4"
+                sx={{
+                  color: "#1877f2",
+                  fontWeight: "bold"
+                }}
+              >
+                {timeLeft[unit]}
+              </Typography>
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  color: "#b22234"
+                }}
+              >
+                {unit}
+              </Typography>
+            </Paper>
+          </Grid>
+        ))}
       </Grid>
     </Box>
   )

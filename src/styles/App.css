@@ -33,6 +33,7 @@
 .btn-title {
   display: flex;
   justify-content: center;
+  padding-bottom: 3%;
 }
 .buy {
   background-color: #b22234;
