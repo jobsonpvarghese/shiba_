@@ -7,23 +7,11 @@ import "./Social.css"
 const SocialMedia = () => {
   return (
     <div className="container">
-      <div
-        style={{
-          width: "100%"
-        }}
-      >
+      <div style={{ width: "100%", overflowX: "auto", whiteSpace: "nowrap" }}>
         <Box display="flex" justifyContent="center" alignItems="center" sx={{ p: 4 }}>
-          <Grid container spacing={5} justifyContent="center" alignItems="center">
+          <Grid container spacing={3} justifyContent="center" alignItems="center" style={{ display: "inline-flex" }}>
             <Grid item>
-              <Link
-                href="https://t.me/vote4shiba"
-                target="_blank"
-                rel="noopener"
-                aria-label="Telegram"
-                style={{
-                  color: "white"
-                }}
-              >
+              <Link href="https://t.me/vote4shiba" target="_blank" rel="noopener" aria-label="Telegram" style={{ color: "white" }}>
                 <FontAwesomeIcon icon={faTelegram} size="2x" />
               </Link>
             </Grid>
@@ -33,9 +21,7 @@ const SocialMedia = () => {
                 target="_blank"
                 rel="noopener"
                 aria-label="Twitter"
-                style={{
-                  color: "white"
-                }}
+                style={{ color: "white" }}
               >
                 <FontAwesomeIcon icon={faXTwitter} size="2x" />
               </Link>
@@ -45,37 +31,19 @@ const SocialMedia = () => {
                 href="https://www.reddit.com/r/Vote4Shiba/?rdt=46456"
                 target="_blank"
                 rel="noopener"
-                aria-label="Instagram"
-                style={{
-                  color: "white"
-                }}
+                aria-label="Reddit"
+                style={{ color: "white" }}
               >
                 <FontAwesomeIcon icon={faReddit} size="2x" />
               </Link>
             </Grid>
             <Grid item>
-              <Link
-                href="https://medium.com/@vote4shiba"
-                target="_blank"
-                rel="noopener"
-                aria-label="TikTok"
-                style={{
-                  color: "white"
-                }}
-              >
+              <Link href="https://medium.com/@vote4shiba" target="_blank" rel="noopener" aria-label="Medium" style={{ color: "white" }}>
                 <FontAwesomeIcon icon={faMedium} size="2x" />
               </Link>
             </Grid>
             <Grid item>
-              <Link
-                href="https://medium.com/@vote4shiba"
-                target="_blank"
-                rel="noopener"
-                aria-label="TikTok"
-                style={{
-                  color: "white"
-                }}
-              >
+              <Link href="https://www.instagram.com/vote4shiba" target="_blank" rel="noopener" aria-label="Instagram" style={{ color: "white" }}>
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </Link>
             </Grid>
@@ -85,9 +53,7 @@ const SocialMedia = () => {
                 target="_blank"
                 rel="noopener"
                 aria-label="TikTok"
-                style={{
-                  color: "white"
-                }}
+                style={{ color: "white" }}
               >
                 <FontAwesomeIcon icon={faTiktok} size="2x" />
               </Link>

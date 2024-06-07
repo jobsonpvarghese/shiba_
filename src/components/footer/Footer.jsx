@@ -7,6 +7,7 @@ import tg from "../../images/icons/telegram.png"
 import reddit from "../../images/icons/redit.png"
 import X from "../../images/icons/x.png"
 import medium from "../../images/icons/medium.png"
+import Disclaimer from "./Disclaimer"
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
       <div class="image-container">
         <img src={logofooter} alt="logofooter" className="logofooter" />
       </div>
-      <Box component="footer">
+      <Box component="footer" className="footer">
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <Typography variant="h6">About Us</Typography>
@@ -48,6 +49,7 @@ const Footer = () => {
           </Grid>
         </Grid>
       </Box>
+      <Disclaimer />
     </div>
   )
 }
