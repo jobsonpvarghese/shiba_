@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Typography, Box, Grid } from "@mui/material"
-import "./Roadmap.css"
+import "./intro.css"
 
 import intro from "../../images/intro.png"
 import introflag from "../../images/intro flag vnyl.png"
