@@ -9,6 +9,7 @@ import TimelineWithFeature from "../components/timeline/TimelineWithFeature"
 import Tokenomics from "../components/tokenomics/Tokenomics"
 import Roadmap from "../components/Roadmap/Roadmap"
 import Mc from "../components/mc/Mc"
+import Counter from "../components/counter/Counter"
 
 function Home() {
   const [openModal, setOpenModal] = useState(false)
@@ -48,6 +49,7 @@ function Home() {
                       Tokenomics
                     </a>
                   </div>
+                  <Counter />
                 </Grid>
               </Grid>
             </Box>
