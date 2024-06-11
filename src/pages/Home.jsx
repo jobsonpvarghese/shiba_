@@ -14,6 +14,7 @@ import Counter from "../components/counter/Counter"
 import confetti from "canvas-confetti"
 import HowToBuy from "../components/howtobuy/HowToBuy"
 import Partner from "../components/partner/Partner"
+// import PaymentCOmponent from "../components/payment/Payment"
 
 function Home() {
   const [openModal, setOpenModal] = useState(false)
