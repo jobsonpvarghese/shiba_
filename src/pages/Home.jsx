@@ -9,12 +9,11 @@ import TimelineWithFeature from "../components/timeline/TimelineWithFeature"
 import Tokenomics from "../components/tokenomics/Tokenomics"
 import Roadmap from "../components/Roadmap/Roadmap"
 import Mc from "../components/mc/Mc"
-// import Counter from "../components/counter/Counter"
+import Counter from "../components/counter/Counter"
 // Import canvas-confetti
 import confetti from "canvas-confetti"
 import HowToBuy from "../components/howtobuy/HowToBuy"
 import Partner from "../components/partner/Partner"
-import PaymentCOmponent from "../components/payment/Payment"
 
 function Home() {
   const [openModal, setOpenModal] = useState(false)
@@ -41,8 +40,8 @@ function Home() {
                 <Grid item xs={12} sm={12} md={6}>
                   <img className="shiba_landing" src={shiba} alt="" />
                 </Grid>
-                <Grid item xs={12} sm={12} md={6} sx={{ mt: 10 }}>
-                  {/* <h1 className="title">
+                <Grid item xs={12} sm={12} md={6}>
+                  <h1 className="title">
                     Shiba <span>for</span>{" "}
                     <span
                       className="Pres"
@@ -53,7 +52,7 @@ function Home() {
                       President
                     </span>
                   </h1>
-                  {/* <div className="btn-title">
+                  <div className="btn-title">
                     <div
                       className="buy"
                       onClick={() => {
@@ -66,14 +65,8 @@ function Home() {
                     <a className="join_tg" href="#tokenomics">
                       Tokenomics
                     </a>
-                  </div> 
-                  <Counter /> */}
-                  <PaymentCOmponent
-                    src="https://pay.radom.com/presale/7a9e74c1-4be0-4b3a-a5fe-b08e0576d602"
-                    title="Radom Payment Page"
-                    width="100%"
-                    height="600px"
-                  />
+                  </div>
+                  <Counter />
                 </Grid>
               </Grid>
             </Box>
